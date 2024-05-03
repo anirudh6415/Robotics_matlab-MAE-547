@@ -5,7 +5,8 @@ syms t1 t2 t3
 syms c1 c12 c123 s1 s12 s123 % for abbreviation
 % DH parameters
 % change_PD_control_RTB
-
+getBCG
+load BCG_value.mat
 Ts = 0.02;
 a = [1 1 1]';
 l = 0.5*a';% com

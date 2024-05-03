@@ -7,8 +7,10 @@ function re = pd_control(dhs,L,KR,ML,MM,IL,IM,K_D,K_P,f,xd)
 % DH parameters
 % change_PD_control_RTB
     %
-
+    getBCG
+    load BCG_value.mat
     Ts = 0.02;
+    %disp(dhs)
     a = dhs(:,3);%[1 1 1]';
     %disp(a);
     l = L *a'; %0.5*a';% com
@@ -31,7 +33,7 @@ function re = pd_control(dhs,L,KR,ML,MM,IL,IM,K_D,K_P,f,xd)
     d     = dhs(:,4); %[0, 0, 0];
     % q = [q(1), q(2), q(3)];
     options=simset('SrcWorkspace','current','DstWorkspace','current');
-    sim('force_control.slx',10, options)
+    sim(['force_control.slx'],10, options)
     
     
     % plot desired vs actual end-effector position and contact force
