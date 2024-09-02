@@ -15,10 +15,8 @@
 ### How to Run the Project
 
 1. **MATLAB Scripts:**
-   - The source code for the project is provided in the `/src/` directory.
-   - Use MATLAB to run the scripts `dynamics_analysis.m`, `control_system.m`, and `trajectories.m`.
-   - Ensure that all required data files from the `/data/` directory are in the MATLAB path before running the scripts.
-
+   - The source code for the project is provided in the respective directories.
+     
 2. **Documentation:**
    - The final project report, including detailed explanations and results, is available in the `/docs/` directory.
      
